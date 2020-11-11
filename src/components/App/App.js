@@ -1,0 +1,36 @@
+import React from 'react'
+import { Col, Row, Container} from 'reactstrap';
+import Header from '../header/Header';
+import RandomChar from '../randomChar/randomChar'
+import ItemList from '../itemList/itemList'
+import ChatDetails from '../charDetails/chatDetails'
+
+
+function App() {
+  return (
+    <>
+      <h1>dfg</h1>
+      <Container>
+        <Header/>
+      </Container>
+      <Container>
+        <Row>
+          <Col lg={{size:5, offset:0}}>
+            <RandomChar/>
+          </Col>
+        </Row>
+        <Row>
+          <Col md='6'>
+            <ItemList/>
+          </Col>
+          <Col md='6'>
+            <ChatDetails/>
+          </Col>
+        </Row>
+      </Container>
+    </>
+
+  );
+}
+
+export default App;
